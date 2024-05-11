@@ -94,6 +94,7 @@ body{
 .tile-img{
     width: max-content;
     height: max-content;
+    box-sizing: border-box;
 }
 
 #complete-container{
