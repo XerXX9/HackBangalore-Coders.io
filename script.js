@@ -19,12 +19,14 @@ draggables.forEach(draggable => {
         // Creating an image element
         var imgElement = document.createElement('img');
         // Setting the source of the image
-        imgElement.src = 'images/card_image.jpg'; // Path to the default image
+        imgElement.src = 'images/chatbot.jpg'; // Path to the default image
         // Setting alt text for the image
         imgElement.alt = buttonText;
+
+        imgElement.setAttribute('id',"feature-img")
         
         // Selecting the searchresults div
-        var searchResultsDiv = document.querySelector('.searchresults');
+        var searchResultsDiv = document.querySelector("#feature-img-container");
         
         // Clearing any previous content in the searchresults div
         searchResultsDiv.innerHTML = '';

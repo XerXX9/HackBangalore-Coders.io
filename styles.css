@@ -57,8 +57,19 @@ body{
 }
 
 .draggable-container,
-.dropzone,
-.searchresults {
+.dropzone{
+    height: 43vh;
+    border: 2px dashed #aaa;
+    min-height: 100px;
+    margin: 10px;
+    padding: 10px;
+    min-width: 33%;
+    overflow-y: scroll;
+    
+}
+
+.searchresults{
+    height: 43vh;
     border: 2px dashed #aaa;
     min-height: 100px;
     margin: 10px;
@@ -103,7 +114,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    overflow-y: scroll;
+    
 
 }
 
@@ -113,4 +124,18 @@ body{
     border-bottom: 2px solid rgb(0, 0, 0);
     padding: 2px;
     
+}
+
+#feature-img-container{
+    max-width: min-content;
+    width: 30vw;
+    height: 15vw;
+
+   
+}
+
+#feature-img-container{
+    max-width: min-content;
+    width: 15vw;
+    height: 30vh;
 }
