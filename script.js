@@ -2,6 +2,36 @@ const draggables = document.querySelectorAll('.draggable');
 const draggableContainer = document.querySelector('.draggable-container');
 const dropzone = document.querySelector('.dropzone');
 
+// getting the home page element
+let homePage = document.getElementById("home-page");
+
+// Adding a click event listener to each feature
+homePage.addEventListener("click",function(){
+    console.log(homePage);
+
+    let buttonText = homePage.innerHTML;
+    // Creating an image element
+    let imgElement = document.createElement('img');
+    // Setting the source of the image
+    imgElement.src = 'images/chatbot.jpg'; // Path to the default image
+    // Setting alt text for the image
+    imgElement.alt = buttonText;
+
+    imgElement.setAttribute('id',"feature-img")
+    
+    // Selecting the searchresults div
+    var searchResultsDiv = document.querySelector("#feature-img-container");
+    
+    // Clearing any previous content in the searchresults div
+    searchResultsDiv.innerHTML = '';
+    
+    // Appending the image element to the searchresults div
+    searchResultsDiv.appendChild(imgElement);
+
+
+});
+
+// drag and drop functionality
 draggables.forEach(draggable => {
     draggable.addEventListener('dragstart', () => {
         draggable.classList.add('dragging');
@@ -11,29 +41,6 @@ draggables.forEach(draggable => {
         draggable.classList.remove('dragging');
     });
 
-    // Adding a click event listener to each draggable element
-    draggable.addEventListener('click', function() {
-        // Getting the text content of the clicked draggable element
-        var buttonText = this.textContent.trim();
-        
-        // Creating an image element
-        var imgElement = document.createElement('img');
-        // Setting the source of the image
-        imgElement.src = 'images/chatbot.jpg'; // Path to the default image
-        // Setting alt text for the image
-        imgElement.alt = buttonText;
-
-        imgElement.setAttribute('id',"feature-img")
-        
-        // Selecting the searchresults div
-        var searchResultsDiv = document.querySelector("#feature-img-container");
-        
-        // Clearing any previous content in the searchresults div
-        searchResultsDiv.innerHTML = '';
-        
-        // Appending the image element to the searchresults div
-        searchResultsDiv.appendChild(imgElement);
-    });
 });
 
 draggableContainer.addEventListener('dragover', e => {
@@ -48,6 +55,8 @@ draggableContainer.addEventListener('dragover', e => {
         draggableContainer.appendChild(draggable);
     }
 });
+
+
 
 dropzone.addEventListener('dragover', e => {
     e.preventDefault();
