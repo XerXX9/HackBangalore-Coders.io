@@ -54,3 +54,17 @@ const draggables = document.querySelectorAll('.draggable');
             document.querySelector('.draggable-container').appendChild(event.target);
         }
     });
+
+    document.getElementById('searchButton').addEventListener('click', function() {
+        var searchValue = document.getElementById('searchInput').value.toLowerCase();
+        var divs = document.querySelectorAll('#divContainer div');
+      
+        divs.forEach(function(div) {
+          var divText = div.textContent.toLowerCase();
+          if (divText.includes(searchValue)) {
+            div.style.display = 'block';
+          } else {
+            div.style.display = 'none';
+          }
+        });
+      });
