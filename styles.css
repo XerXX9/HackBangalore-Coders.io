@@ -127,15 +127,12 @@ body{
 }
 
 #feature-img-container{
-    max-width: min-content;
-    width: 30vw;
-    height: 15vw;
+    width: min-content;
+    margin: 0 auto;
 
    
 }
 
-#feature-img-container{
-    max-width: min-content;
-    width: 15vw;
-    height: 30vh;
+#feature-img{ 
+    width: fill-content;
 }
