@@ -13,7 +13,7 @@ homePage.addEventListener("click",function(){
     // Creating an image element
     let imgElement = document.createElement('img');
     // Setting the source of the image
-    imgElement.src = 'images/chatbot.jpg'; // Path to the default image
+    imgElement.src = 'images/product_listing.png'; // Path to the default image
     // Setting alt text for the image
     imgElement.alt = buttonText;
 
