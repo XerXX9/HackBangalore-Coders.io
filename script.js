@@ -55,9 +55,10 @@ const draggables = document.querySelectorAll('.draggable');
         }
     });
 
-    document.getElementById('searchButton').addEventListener('click', function() {
-        var searchValue = document.getElementById('searchInput').value.toLowerCase();
-        var divs = document.querySelectorAll('#divContainer div');
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+        var searchValue = this.value.trim().toLowerCase();
+        var divs = document.querySelectorAll('#divContainer');
       
         divs.forEach(function(div) {
           var divText = div.textContent.toLowerCase();
