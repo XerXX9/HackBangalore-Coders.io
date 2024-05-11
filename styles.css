@@ -4,10 +4,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
+    border-bottom: 1px solid #330066;
 }
 
 nav {
     margin: auto 1px;
+   
 }
 
 .nav li {
@@ -127,20 +129,55 @@ body{
 }
 
 #feature-img-container{
-    max-width: min-content;
-    width: 30vw;
-    height: 15vw;
-
+    width: min-content;
+    margin: auto auto;
+display: flex;
    
 }
 
-#feature-img-container{
-    max-width: min-content;
-    width: 15vw;
-    height: 30vh;
+#feature-img{
+    width: fill-content;
 }
 
-#text-container{
-    margin: 5px;
+.container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1vh;
+}
+
+.inneritem {
+    border: 1px solid;
+    border-color: #330066;
+
+    padding-bottom: 8px;
+}
+
+.pp {
+    width: auto;
+    height: auto;
+    max-width: 55px;
+    max-height: 55px;
+    border-radius: 50px;
+}
+
+.draggable {
+        display:inline-block;
+        color: white;
+        border:1px solid #330066;
+        background:#330066;
+        box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+        cursor:pointer;
+        vertical-align:middle;
+        max-width: 100px;
+        padding: 5px;
+        text-align: center;
+        border-radius: 50px;
+    }
+.draggable:active {
+        color:red;
+        box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+    }
+#searchinput {
     
 }
