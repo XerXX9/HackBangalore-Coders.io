@@ -21,7 +21,7 @@ nav {
 
 .btn {
     border-radius: 20px;
-    background-color: rgb(51, 0, 102);
+    background-color: #330066;
     font-family: monospace;
     border-color: rgb(51, 0, 102);
 }
@@ -94,4 +94,17 @@ body{
 .tile-img{
     width: max-content;
     height: max-content;
+}
+
+#complete-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#dropzone{
+    font-weight: 700;
+    color:rgb(250, 235, 215);
+    
 }
