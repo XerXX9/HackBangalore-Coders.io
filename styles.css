@@ -31,7 +31,7 @@ body{
     
 }
 
-/* button{
+button{
     display: flex;
     height: auto;
     width: auto;
@@ -39,7 +39,7 @@ body{
     border: 5px ;
     
 
-} */
+}
 
 #card_container{
     display: flex;
@@ -83,6 +83,10 @@ body{
     border-radius: none;
 }
 
-.card{
-
+.logo {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+    border-radius: 50px;
 }
