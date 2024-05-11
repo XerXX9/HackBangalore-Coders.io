@@ -60,14 +60,17 @@ button{
 .container {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .draggable-container,
-.dropzone {
+.dropzone,
+.searchresults {
     border: 2px dashed #aaa;
     min-height: 100px;
     margin: 10px;
     padding: 10px;
+    min-width: 33%;
 }
 
 .draggable {
@@ -76,6 +79,7 @@ button{
     padding: 10px;
     margin: 5px;
     display: block;
+    min-width: 33%;
 }
 
 .dropzone {
