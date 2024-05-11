@@ -32,20 +32,19 @@ body{
     
 }
 
-button{
+/* button{
     display: flex;
     height: auto;
     width: auto;
     padding: 0;
     border: 5px ;
-    
 
-}
+} */
 
-#card_container{
+#card-container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
 }
@@ -80,9 +79,9 @@ button{
     flex-grow: 1;
 }
 
-.tile-img{
+/* .tile-img{
     border-radius: none;
-}
+} */
 
 .logo {
     height: auto;
@@ -90,4 +89,9 @@ button{
     max-height: 72px;
     max-width: 250px;
     border-radius: 50px;
+}
+
+.tile-img{
+    width: max-content;
+    height: max-content;
 }
