@@ -94,18 +94,23 @@ body{
 .tile-img{
     width: max-content;
     height: max-content;
+    /* makes the image scale with the tiles */
     box-sizing: border-box;
+    
 }
 
 #complete-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    overflow-y: scroll;
 
 }
 
-#dropzone{
-    font-weight: 700;
-    color:rgb(250, 235, 215);
+#dropzone-heading{
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    padding: 2px;
     
 }
