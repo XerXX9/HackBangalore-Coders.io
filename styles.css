@@ -34,24 +34,6 @@ body{
     
 }
 
-/* button{
-    display: flex;
-    height: auto;
-    width: auto;
-    padding: 0;
-    border: 5px ;
-
-} */
-
-#card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-}
-
-
 .container {
     display: flex;
     flex-direction: row;
@@ -61,15 +43,15 @@ body{
 .draggable-container,
 .dropzone{
     height: 43vh;
-    border: 2px dashed #aaa;
+    border: 2px #330066;
     min-height: 100px;
-    margin: 10px;
-    padding: 10px;
     min-width: 33%;
     overflow-y: scroll;
     
 }
 
+.draggable-container,
+.dropzone,
 .searchresults{
     height: 43vh;
     border: 2px dashed #aaa;
@@ -79,7 +61,7 @@ body{
     min-width: 33%;
 }
 
-.draggable {
+.draggable2 {
     cursor: pointer;
     border: 1px solid #ccc;
     padding: 10px;
@@ -92,24 +74,12 @@ body{
     flex-grow: 1;
 }
 
-/* .tile-img{
-    border-radius: none;
-} */
-
 .logo {
     height: auto;
     width: auto;
     max-height: 72px;
     max-width: 250px;
     border-radius: 50px;
-}
-
-.tile-img{
-    width: max-content;
-    height: max-content;
-    /* makes the image scale with the tiles */
-    box-sizing: border-box;
-    
 }
 
 #complete-container{
@@ -128,15 +98,8 @@ body{
     
 }
 
-#feature-img-container{
-    width: min-content;
-    margin: auto auto;
-display: flex;
-   
-}
-
-#feature-img{
-    width: fill-content;
+.dropzone {
+    flex-grow: 1;
 }
 
 .container {
@@ -166,47 +129,27 @@ display: flex;
     
 }
 
-.draggable {
-        display:inline-block;
-        color: white;
-        border:1px solid #330066;
-        background:#330066;
-        box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
-        cursor:pointer;
-        vertical-align:middle;
-        max-width: 100px;
-        padding: 5px;
-        text-align: center;
-        border-radius: 50px;
+.draggable2 {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    min-width: 110px;
+    display:inline-block;
+    color: white;
+    border:1px solid #330066;
+    background:#330066;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
     }
-.draggable:active {
+.draggable2:active {
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
     }
-
-
-
-
-#divContainerv2 {
-        display:inline-block;
-        color: white;
-        border:1px solid #330066;
-        background:#330066;
-        box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
-        cursor:pointer;
-        vertical-align:middle;
-        max-width: 120px;
-        padding: 10px;
-        text-align: center;
-        border-radius: 10px;
-        
-        
-}
-
-
-
-
-
-
 
 
 
@@ -215,6 +158,28 @@ display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 10px;
+    display: inline-block;
+}
+    
+
+#divContainerv2 {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    display: block;
+    min-width: 110px;
+    display:inline-block;
+    color: white;
+    border:1px solid #330066;
+    background:#330066;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 50px;
+        
 }
 
 
