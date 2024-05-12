@@ -2,8 +2,9 @@ const draggables = document.querySelectorAll('.draggable');
 const draggableContainer = document.querySelector('.draggable-container');
 const dropzone = document.querySelector('.dropzone');
 
-// getting the home page element
 let homePage = document.getElementById("home-page");
+let textContainerDiv = document.querySelector("#text-container");
+let searchResultsDiv = document.querySelector("#feature-img-container");
 
 // Adding a click event listener to each feature
 homePage.addEventListener("click",function(){
@@ -19,14 +20,26 @@ homePage.addEventListener("click",function(){
 
     imgElement.setAttribute('id',"feature-img")
     
-    // Selecting the searchresults div
-    var searchResultsDiv = document.querySelector("#feature-img-container");
-    
     // Clearing any previous content in the searchresults div
     searchResultsDiv.innerHTML = '';
     
     // Appending the image element to the searchresults div
     searchResultsDiv.appendChild(imgElement);
+
+    // creating the "why it's required" header
+    let reqHeader = document.createElement("h4")
+    reqHeader.setAttribute('value',"Why is it required?")
+    
+    document.append(reqHeader)
+    
+    let content1 = document.createElement("p")
+    content1.setAttribute('value',"")
+
+
+    .insertAfter()
+
+    let bpHeader = document.createElement("h4")
+    reqHeader.setAttribute('value',"Best Practices")
 
 
 });
