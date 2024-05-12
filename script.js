@@ -31,14 +31,14 @@ productListing.addEventListener("click",function(){
     reqHeader.setAttribute('value',"Why is it required?");
     reqHeader.setAttribute('id',"required-header");
     // rendering the first header
-    document.append(reqHeader)
+    document.appendChild(reqHeader)
 
     let content1 = document.createElement("p");
     content1.setAttribute('value',"conten1");
     reqHeader.setAttribute('id',"required-content");
 
     // rendering the content for the first header
-    content1.insertAfter("required-header");
+    document.appendChild("required-header");
 
 
     let bpHeader = document.createElement("h4");
@@ -46,14 +46,14 @@ productListing.addEventListener("click",function(){
     reqHeader.setAttribute('id',"bp-header");
 
     // rendering the "best practices" header
-    reqHeader.insertAfter("required-content")
+    document.appendChild("required-content")
 
     let content2 = document.createElement("p");
     content1.setAttribute('value',"conten2");
     reqHeader.setAttribute('id',"bp-content");
 
     // rendering the content for the "best practices" header
-    content1.insertAfter("bp-header");
+    document.appendChild("bp-header");
 
 });
 
