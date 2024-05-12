@@ -17,7 +17,7 @@ nav {
 }
 
 .nav li a:hover {
-    color: green;
+    color: #a59ac3;
 }
 
 
@@ -54,7 +54,7 @@ body{
 .dropzone,
 .searchresults{
     height: 43vh;
-    border: 2px dashed #aaa;
+
     min-height: 100px;
     margin: 10px;
     padding: 10px;
@@ -72,6 +72,7 @@ body{
 
 .dropzone {
     flex-grow: 1;
+    border: 2px dashed #aaa;
 }
 
 .logo {
@@ -92,14 +93,15 @@ body{
 
 #dropzone-heading{
     font-weight: 600;
-    color:rgb(0, 0, 0);
-    border-bottom: 2px solid rgb(0, 0, 0);
+    color: hsl(220, 6%, 68%);
+    border-bottom: 2px solid hsl(220, 6%, 68%);
     padding: 2px;
     
 }
 
 .dropzone {
     flex-grow: 1;
+    background-color: white;
 }
 
 .container {
@@ -107,7 +109,7 @@ body{
     display: flex;
     flex-direction: column;
     padding-top: 1vh;
-    color: #a59ac3;
+    color: white;
 }
 
 .inneritem {
@@ -184,11 +186,12 @@ body{
 
 
 
-
-
-
-
-
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: rgb(51, 0, 102) !important;
+  border-color: rgb(51, 0, 102) !important;
+  border-radius: 20px !important;
+  font-family: monospace !important;
+}
 
 
 
