@@ -18,7 +18,7 @@ homePage.addEventListener("click",function(){
     // Setting alt text for the image
     imgElement.alt = buttonText;
 
-    imgElement.setAttribute('id',"feature-img")
+    imgElement.setAttribute('id',"feature-img");
     
     // Clearing any previous content in the searchresults div
     searchResultsDiv.innerHTML = '';
@@ -27,19 +27,22 @@ homePage.addEventListener("click",function(){
     searchResultsDiv.appendChild(imgElement);
 
     // creating the "why it's required" header
-    let reqHeader = document.createElement("h4")
-    reqHeader.setAttribute('value',"Why is it required?")
+    let reqHeader = document.createElement("h4");
+    reqHeader.setAttribute('value',"Why is it required?");
+    reqHeader.setAttribute('id',"required-header");
     
     document.append(reqHeader)
+
+    let content1 = document.createElement("p");
+    content1.setAttribute('value',"conten1");
+    reqHeader.setAttribute('id',"required-content");
+
+
+    content1.insertAfter("required-header");
+
+    let bpHeader = document.createElement("h4");
+    reqHeader.setAttribute('value',"Best Practices");
     
-    let content1 = document.createElement("p")
-    content1.setAttribute('value',"")
-
-
-    .insertAfter()
-
-    let bpHeader = document.createElement("h4")
-    reqHeader.setAttribute('value',"Best Practices")
 
 
 });
