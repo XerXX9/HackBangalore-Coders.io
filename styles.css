@@ -182,7 +182,7 @@ display: flex;
 .draggable:active {
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
     }
-<<<<<<< HEAD
+
 
 
 
@@ -622,9 +622,7 @@ display: flex;
   button,
   [type=button],
   [type=reset],
-  [type=submit] {
-    -webkit-appearance: button;
-  }
+  [type=submit] 
   button:not(:disabled),
   [type=button]:not(:disabled),
   [type=reset]:not(:disabled),
@@ -679,11 +677,7 @@ display: flex;
     height: auto;
   }
   
-  [type=search] {
-    outline-offset: -2px;
-    -webkit-appearance: textfield;
-  }
-  
+
   /* rtl:raw:
   [type="tel"],
   [type="url"],
@@ -700,10 +694,7 @@ display: flex;
     padding: 0;
   }
   
-  ::file-selector-button {
-    font: inherit;
-    -webkit-appearance: button;
-  }
+
   
   output {
     display: inline-block;
@@ -11064,5 +11055,3 @@ display: flex;
       display: none !important;
     }
   }
-=======
->>>>>>> c6ed02a73e89f2aa92e5f1a52de8b3380add42f3
