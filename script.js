@@ -35,25 +35,25 @@ productListing.addEventListener("click",function(){
 
     let content1 = document.createElement("p");
     content1.setAttribute('value',"conten1");
-    reqHeader.setAttribute('id',"required-content");
+    content1.setAttribute('id',"required-content");
 
     // rendering the content for the first header
-    document.appendChild("required-header");
+    document.appendChild(content1);
 
 
     let bpHeader = document.createElement("h4");
-    reqHeader.setAttribute('value',"Best Practices");
-    reqHeader.setAttribute('id',"bp-header");
+    bpHeader.setAttribute('value',"Best Practices");
+    bpHeader.setAttribute('id',"bp-header");
 
     // rendering the "best practices" header
-    document.appendChild("required-content")
+    document.appendChild(bpHeader)
 
     let content2 = document.createElement("p");
-    content1.setAttribute('value',"conten2");
-    reqHeader.setAttribute('id',"bp-content");
+    content2.setAttribute('value',"conten2");
+    content2.setAttribute('id',"bp-content");
 
     // rendering the content for the "best practices" header
-    document.appendChild("bp-header");
+    document.appendChild(content2);
 
 });
 
