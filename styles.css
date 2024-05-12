@@ -182,6 +182,7 @@ display: flex;
 .draggable:active {
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
     }
+<<<<<<< HEAD
 
 
 
@@ -11063,3 +11064,5 @@ display: flex;
       display: none !important;
     }
   }
+=======
+>>>>>>> c6ed02a73e89f2aa92e5f1a52de8b3380add42f3
