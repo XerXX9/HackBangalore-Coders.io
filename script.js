@@ -2,15 +2,15 @@ const draggables = document.querySelectorAll('.draggable');
 const draggableContainer = document.querySelector('.draggable-container');
 const dropzone = document.querySelector('.dropzone');
 
-let homePage = document.getElementById("home-page");
+let productListing = document.getElementById("product-listing");
 let textContainerDiv = document.querySelector("#text-container");
 let searchResultsDiv = document.querySelector("#feature-img-container");
 
 // Adding a click event listener to each feature
-homePage.addEventListener("click",function(){
-    console.log(homePage);
+productListing.addEventListener("click",function(){
+    console.log(productListing);
 
-    let buttonText = homePage.innerHTML;
+    let buttonText = productListing.innerHTML;
     // Creating an image element
     let imgElement = document.createElement('img');
     // Setting the source of the image
@@ -30,20 +30,30 @@ homePage.addEventListener("click",function(){
     let reqHeader = document.createElement("h4");
     reqHeader.setAttribute('value',"Why is it required?");
     reqHeader.setAttribute('id',"required-header");
-    
+    // rendering the first header
     document.append(reqHeader)
 
     let content1 = document.createElement("p");
     content1.setAttribute('value',"conten1");
     reqHeader.setAttribute('id',"required-content");
 
-
+    // rendering the content for the first header
     content1.insertAfter("required-header");
+
 
     let bpHeader = document.createElement("h4");
     reqHeader.setAttribute('value',"Best Practices");
-    
+    reqHeader.setAttribute('id',"bp-header");
 
+    // rendering the "best practices" header
+    reqHeader.insertAfter("required-content")
+
+    let content2 = document.createElement("p");
+    content1.setAttribute('value',"conten2");
+    reqHeader.setAttribute('id',"bp-content");
+
+    // rendering the content for the "best practices" header
+    content1.insertAfter("bp-header");
 
 });
 
