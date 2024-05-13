@@ -157,6 +157,7 @@ body{
     padding: 5px;
     text-align: center;
     border-radius: 50px;
+    font-family: monospace;
     }
 .draggable2:active {
         box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
