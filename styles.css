@@ -72,6 +72,9 @@ body{
   width: 33.33%;
   height: 43vh;
 }
+#searchInput {
+  color: black !important; /* Change 'your-desired-color' to the color you want */
+}
 
 
 
