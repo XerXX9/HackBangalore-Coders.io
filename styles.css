@@ -40,26 +40,41 @@ body{
     width: 100%;
 }
 
+#contain {
+  display: flex;
+  
+}
+
+#complete-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 0;
+}
+
 .draggable-container,
 .dropzone{
     height: 43vh;
     border: 2px #330066;
     min-height: 100px;
-    min-width: 33%;
     overflow-y: scroll;
+    flex-grow: 0;
+    width: 66.66vw;
     
 }
-
-.draggable-container,
-.dropzone,
-.searchresults{
-    height: 43vh;
-
-    min-height: 100px;
-    margin: 10px;
-    padding: 10px;
-    min-width: 33%;
+.draggable-container {
+  height: 18vh;
 }
+
+.searchresults {
+  min-width: 33%;
+  flex-grow: 1;
+  width: 33.33%;
+  height: 43vh;
+}
+
+
+
 
 .draggable2 {
     cursor: pointer;
@@ -83,13 +98,7 @@ body{
     border-radius: 50px;
 }
 
-#complete-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
 
-}
 
 #dropzone-heading{
     font-weight: 600;
